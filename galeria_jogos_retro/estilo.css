@@ -1,0 +1,142 @@
+:root {
+  --retro-bg: #0f1020;
+  --retro-card: #17182c;
+  --retro-accent: #00e0a4;
+  --retro-accent-2: #8afcff;
+  --retro-text: #f5f7ff;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 10% 10%, #1b1d36 0%, var(--retro-bg) 50%, #0a0b18 100%);
+  color: var(--retro-text);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(23, 24, 44, .8) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(138, 252, 255, .2);
+}
+
+.navbar .nav-link {
+  color: rgba(245, 247, 255, .85);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--retro-accent-2);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0 2rem 0;
+}
+
+.hero h1 {
+  letter-spacing: .5px;
+  text-shadow: 0 0 12px rgba(0, 224, 164, .2);
+}
+
+.card {
+  background: var(--retro-card);
+  border: 1px solid rgba(138, 252, 255, .15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+  color: var(--retro-text);
+  /* <- texto claro por padrão */
+}
+
+.card .card-title {
+  color: #e6ebff;
+}
+
+/* título claro */
+.card .card-text {
+  color: rgba(245, 247, 255, .80);
+}
+
+/* descrição  */
+
+/* Badges */
+.badge-retro {
+  background: linear-gradient(45deg, var(--retro-accent), var(--retro-accent-2));
+  color: #0b0e16;
+  border: none;
+}
+
+/* Em fundo escuro, o .text-secondary do BS fica muito fraco */
+.text-secondary {
+  color: rgba(245, 247, 255, .65) !important;
+}
+
+/* Formulários */
+.form-label {
+  color: #cbd3ff;
+}
+
+.form-control,
+.form-select {
+  background: #0d0f1f;
+  color: #e6ebff;
+  border: 1px solid rgba(138, 252, 255, .15);
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+  color: rgba(230, 235, 255, .55);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--retro-accent);
+  box-shadow: 0 0 0 .25rem rgba(0, 224, 164, .25);
+  color: #fff;
+  background: #0d0f1f;
+}
+
+/* Botões tema */
+.btn-retro {
+  background: linear-gradient(90deg, var(--retro-accent), var(--retro-accent-2));
+  color: #0b0e16;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-outline-retro {
+  border: 1px solid var(--retro-accent);
+  color: var(--retro-accent);
+}
+
+.btn-outline-retro:hover {
+  background: var(--retro-accent);
+  color: #0b0e16;
+}
+
+.spinner-border {
+  --bs-spinner-border-color: var(--retro-accent);
+  --bs-spinner-animation-speed: .8s;
+}
+
+/* Links */
+a,
+a:hover {
+  color: var(--retro-accent-2);
+}
+
+footer {
+  background-color: #9b0303;
+  color: #fff;
+  text-align: center;
+  padding: 10px 5px;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+footer p {
+  margin-bottom: 3px;
+}
+
+footer img {
+  margin: 2px 5px;
+  vertical-align: middle;
+}
